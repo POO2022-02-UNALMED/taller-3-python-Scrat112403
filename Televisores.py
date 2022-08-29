@@ -19,7 +19,7 @@ class TV:
         self.control=control
 
     def __init__(self, marca, estado):
-        self.marca=marca
+        self.marca=Marca
         self.estado=estado
 
     canal=1
@@ -54,15 +54,15 @@ class TV:
     def nuevoTV():
         numTV= numTV+1 
 
-    def turnOn (self, on):
-        self.estado=on
-    def turnOff (self, off):
-        self.estado=off
+    def turnOn (self, On):
+        self.estado=On
+    def turnOff (self, Off):
+        self.estado=Off
     
     def getEstado (self):
         return self.estado
         
-        if estado=="on":
+        if estado=="On":
             def canalUp(self,canal):
                 if 120>canal>=1:
                     self.canal= canal+1
@@ -76,7 +76,7 @@ class TV:
                     self.canal= canal
             
         
-        if estado=="on":
+        if estado=="On":
             def volumenUp(self,volumen):
                 if 7>volumen>=0:
                     self.volumen= volumen+1
@@ -95,15 +95,15 @@ class Control:
     def __init__(self, tv):
         self.tv= TV
     
-    def turnOn (self, on):
-        self.estado=on
-    def turnOff (self, off):
-        self.estado=off
+    def turnOn (self, On):
+        self.estado=On
+    def turnOff (self, Off):
+        self.estado=Off
     
     def getEstado (self):
         return self.estado
         
-        if estado=="on":
+        if estado=="On":
             def canalUp(self,canal):
                 if 120>canal>=1:
                     self.canal= canal+1
@@ -116,7 +116,7 @@ class Control:
                 else:
                     self.canal= canal
         
-        if estado=="on":
+        if estado=="On":
             def volumenUp(self,volumen):
                 if 7>volumen>=0:
                     self.volumen= volumen+1
