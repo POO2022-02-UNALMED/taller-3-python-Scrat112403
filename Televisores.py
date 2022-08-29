@@ -142,12 +142,3 @@ class Control:
 
     def gettv (self):
         return self.tv
-
-    
-
-    
-
-    
-
-
-
