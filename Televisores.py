@@ -8,7 +8,7 @@ class Marca:
     def setNombre (self, name):
         self.nombre=name
 
-from Televisores import Marca
+
 class TV:
     def __init__(self, marca, canal, precio, estado, volumen, control):
         self.marca= Marca
@@ -89,7 +89,7 @@ class TV:
                 else:
                     self.volumen=volumen
 
-from Televisores import TV
+
 class Control:
     
     def __init__(self, tv):
