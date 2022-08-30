@@ -33,6 +33,9 @@ class Control:
 
     def setCanal (self, can):
         self.tv.canal=can
+    
+    def getCanal (self):
+        return self.canal
         
 
     def enlazar (self,tv):
