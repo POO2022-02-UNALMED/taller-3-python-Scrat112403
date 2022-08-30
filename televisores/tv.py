@@ -57,7 +57,7 @@ class TV:
                             self.canal= canal+1
                         else:
                             self.canal= canal
-            
+                if estado=="On":
                     def canalDown(self,canal):
                         if 120>=canal>1:
                             self.canal= canal-1
