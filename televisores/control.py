@@ -1,6 +1,5 @@
 from televisores.tv import TV
-if __name__=="__main__":
-        class Control:
+class Control:
         
             def __init__(self, tv):
                 self.tv= TV
