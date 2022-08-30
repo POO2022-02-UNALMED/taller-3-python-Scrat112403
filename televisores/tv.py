@@ -2,7 +2,7 @@ from televisores.marca import Marca
 class TV:
     numTV=0
     def __init__(self, marca, estado):
-        self.marca=Marca
+        self.marca=marca
         self.estado=estado     
         self.canal=1
         self.volumen=1
