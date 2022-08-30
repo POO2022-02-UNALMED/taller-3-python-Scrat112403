@@ -35,14 +35,14 @@ class Control:
                 TV.canal=can
         
 
-            def enlazar (self):
+            def enlazar (self,tv):
                 self.tv=None
                 TV.setControl(self)
     
-            def settv (self, tv):
+            def setTV (self, tv):
                 self.tv=tv
 
-            def gettv (self):
+            def getTV (self):
                 return self.tv
 
 
