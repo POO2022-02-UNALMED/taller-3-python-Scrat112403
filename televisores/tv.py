@@ -43,10 +43,10 @@ class TV:
             def setNumTV(self):
                 NumTV= NumTV+1 
 
-            def turnOn (self, On):
-                self.estado=On
-            def turnOff (self, Off):
-                self.estado=Off
+            def turnOn (self):
+                self.estado=None
+            def turnOff (self):
+                self.estado= None
     
             def getEstado (self):
                 return self.estado
