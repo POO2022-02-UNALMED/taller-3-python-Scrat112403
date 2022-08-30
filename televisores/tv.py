@@ -1,6 +1,6 @@
 from televisores.marca import Marca
 class TV:
-    NumTV=0
+    numTV=0
     canal=1
     volumen=1
     precio=500
@@ -11,7 +11,7 @@ class TV:
                 self.estado= estado
                 self.volumen= volumen
                 self.control=control
-                TV.NumTV= TV.NumTV+1
+                TV.numTV= TV.numTV+1
 
     def __init__(self, marca, estado):
                 self.marca=Marca
@@ -39,11 +39,11 @@ class TV:
     def getCanal (self):
                 return self.canal
 
-    def setNumTV(self):
-                TV.NumTV= None
+    def setnumTV(self):
+                TV.numTV= None
             
-    def getNumTV():
-                return TV.NumTV
+    def getnumTV():
+                return TV.numTV
 
     def turnOn (self):
                 self.estado=None
