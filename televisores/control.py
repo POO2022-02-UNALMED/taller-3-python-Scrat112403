@@ -42,8 +42,8 @@ class Control:
                 TV.canal=can
         
 
-            def enlazar (self, televisor):
-                self.tv=televisor
+            def enlazar (self):
+                self.tv=None
                 TV.setControl(self)
     
             def settv (self, tv):
