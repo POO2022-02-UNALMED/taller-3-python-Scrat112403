@@ -31,13 +31,13 @@ class Control:
             if 7>=self.tv.volumen>0:
                 self.tv.volumenDown()
 
-    def setCanal (self,canal):
+    def setCanal (self):
         if self.tv.estado==True:
             if 120>self.tv.canal>=1:
-                self.tv.canal=canal
+                self.tv.canal()
     
     def getCanal (self):
-        return self.tv.canal
+        return self.canal
         
 
     def enlazar (self,tv):
