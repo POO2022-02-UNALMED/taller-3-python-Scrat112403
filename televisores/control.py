@@ -34,10 +34,10 @@ class Control:
     def setCanal (self,canal):
         if self.tv.estado==True:
             if 121>self.tv.canal>0:
-                self.tv.setCanal=canal
+                self.tv.canal=canal
 
     def getCanal (self):
-        return self.canal
+        return self.tv.canal
         
 
     def enlazar (self,tv):
