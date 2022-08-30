@@ -38,10 +38,10 @@ class TV:
                 return self.volumen
     def getCanal (self):
                 return self.canal
-
+    @classmethod
     def setnumTV(self):
                 TV.numTV= None
-            
+    @classmethod       
     def getnumTV():
                 return TV.numTV
 
