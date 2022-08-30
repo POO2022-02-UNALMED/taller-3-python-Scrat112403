@@ -2,74 +2,67 @@ from televisores.marca import Marca
 class TV:
     numTV=0
     def __init__(self, marca, estado):
-                self.marca=Marca
-                self.estado=estado     
-                self.canal=1
-                self.volumen=1
-                self.precio=500
-                TV.numTV+=1
+        self.marca=Marca
+        self.estado=estado     
+        self.canal=1
+        self.volumen=1
+        self.precio=500
+        TV.numTV+=1
 
     
     def setMarca (self, marc):
-                self.marca=marc
+        self.marca=marc
     def setControl (self, ctrl):
-                self.control= ctrl
+        self.control= ctrl
     def setPrecio (self, price):
-                self.precio=price
+        self.precio=price
     def setVolumen (self, vol):
-                self.volumen=vol
+        self.volumen=vol
     def setCanal (self, can):
-                self.canal=can
+        self.canal=can
 
     def getMarca (self):
-                return self.marca
+        return self.marca
     def getControl (self):
-                return self.control
+        return self.control
     def getPrecio (self):
-                return self.precio
+        return self.precio
     def getVolumen (self):
-                return self.volumen
+        return self.volumen
     def getCanal (self):
-                return self.canal
+        return self.canal
 
     def setNumTV(num):
-                TV.numTV=num
+        TV.numTV=num
 
      
     def getNumTV():
-                return TV.numTV
+        return TV.numTV
 
     def turnOn (self):
-                self.estado=True
+        self.estado=True
     def turnOff (self):
-                self.estado= False
+        self.estado= False
     
     def getEstado (self):
-                return self.estado
-                
-                def canalUp(self,canal):
-                    if estado==True:
-                        if 120>canal>=1:
-                            self.canal= canal+1
-                        else:
-                            self.canal= canal
-                def canalDown(self,canal):
-                    if estado==True:
-                        if 120>=canal>1:
-                            self.canal= canal-1
-                        else:
-                            self.canal= canal
+        return self.estado
+        
+        def canalUp(self,canal):
+            if estado==True:
+                if 120>canal>=1:
+                    self.canal += 1
+        def canalDown(self,canal):
+            if estado==True:
+                if 120>=canal>1:
+                    self.canal-= 1
             
-                def volumenUp(self,volumen):
-                    if estado==True:
-                        if 7>volumen>=0:
-                            self.volumen= volumen+1
-                        else:
-                            self.volumen=volumen
+        def volumenUp(self,volumen):
+            if estado==True:
+                if 7>volumen>=0:
+                    self.volumen+= 1
     
-                def volumenDown(self,volumen):
-                    if estado==True:
-                        if 7>=volumen>0:
-                            self.volumen= volumen-1
-                        else:
-                            self.volumen=volumen
+        def volumenDown(self,volumen):
+            if estado==True:
+                if 7>=volumen>0:
+                    self.volumen-= 1
+ 
