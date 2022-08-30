@@ -47,22 +47,22 @@ class TV:
     def getEstado (self):
         return self.estado
         
-        def canalUp(self,canal):
+        def canalUp(self):
             if estado==True:
                 if 120>canal>=1:
-                    self.canal=canal
-        def canalDown(self,canal):
+                    self.canal += 1
+        def canalDown(self):
             if estado==True:
                 if 120>=canal>1:
-                    self.canal=canal
+                    self.canal-= 1
             
-        def volumenUp(self,volumen):
+        def volumenUp(self):
             if estado==True:
                 if 7>volumen>=0:
                     self.volumen+= 1
     
-        def volumenDown(self,volumen):
+        def volumenDown(self):
             if estado==True:
                 if 7>=volumen>0:
-                    self.volumen-= 1
+                    self.volumen-=1
  
