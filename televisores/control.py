@@ -32,7 +32,9 @@ class Control:
                 self.tv.volumenDown()
 
     def setCanal (self, can):
-        self.tv.canal=can
+        if self.tv.estado==True:
+            if 120>self.tv.canal>=1:
+                self.tv.canal()
     
     def getCanal (self):
         return self.canal
