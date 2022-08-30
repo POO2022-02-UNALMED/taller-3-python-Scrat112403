@@ -31,8 +31,8 @@ class Control:
             if 7>=self.tv.volumen>0:
                 self.tv.volumenDown()
 
-    def setCanal (self):
-        self.tv.setCanal()
+    def setCanal (self, canal):
+        self.tv.setCanal= canal
 
     def getCanal (self):
         return self.tv.canal
