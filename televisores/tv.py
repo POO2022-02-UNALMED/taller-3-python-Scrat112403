@@ -11,7 +11,7 @@ class TV:
                 self.estado= estado
                 self.volumen= volumen
                 self.control=control
-                NumTV= NumTV+1
+                TV.NumTV= TV.NumTV+1
 
     def __init__(self, marca, estado):
                 self.marca=Marca
