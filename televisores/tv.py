@@ -32,7 +32,7 @@ class TV:
     def getCanal (self):
                 return self.canal
 
-    def setnumTV(num):
+    def setNumTV(num):
                 TV.numTV=num
 
 
