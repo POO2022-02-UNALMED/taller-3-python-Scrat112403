@@ -1,56 +1,56 @@
 from televisores.marca import Marca
 class TV:
-            def __init__(self, marca, canal, precio, estado, volumen, control):
+    NumTV=0
+    canal=1
+    volumen=1
+    precio=500
+    def __init__(self, marca, canal, precio, estado, volumen, control):
                 self.marca= Marca
                 self.canal= canal
                 self.precio= precio
                 self.estado= estado
                 self.volumen= volumen
                 self.control=control
+                NumTV= NumTV+1
 
-            def __init__(self, marca, estado):
+    def __init__(self, marca, estado):
                 self.marca=Marca
-                self.estado=estado
-
-            canal=1
-            volumen=1
-            precio=500
-
-            def setMarca (self, marc):
+                self.estado=estado       
+    
+    def setMarca (self, marc):
                 self.marca=marc
-            def setControl (self, ctrl):
+    def setControl (self, ctrl):
                 self.control= ctrl
-            def setPrecio (self, price):
+    def setPrecio (self, price):
                 self.precio=price
-            def setVolumen (self, vol):
+    def setVolumen (self, vol):
                 self.volumen=vol
-            def setCanal (self, can):
+    def setCanal (self, can):
                 self.canal=can
 
-            def getMarca (self):
+    def getMarca (self):
                 return self.marca
-            def getControl (self):
+    def getControl (self):
                 return self.control
-            def getPrecio (self):
+    def getPrecio (self):
                 return self.precio
-            def getVolumen (self):
+    def getVolumen (self):
                 return self.volumen
-            def getCanal (self):
+    def getCanal (self):
                 return self.canal
 
-            NumTV=0
-            def setNumTV(self):
-                NumTV= +1
+    def setNumTV(self):
+                NumTV= None
             
-            def getNumTV():
+    def getNumTV():
                 return TV.NumTV
 
-            def turnOn (self):
+    def turnOn (self):
                 self.estado=None
-            def turnOff (self):
+    def turnOff (self):
                 self.estado= None
     
-            def getEstado (self):
+    def getEstado (self):
                 return self.estado
             
                 if estado=="On":
