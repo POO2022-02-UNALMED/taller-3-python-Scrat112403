@@ -1,4 +1,4 @@
-from marca import Marca
+from televisores.marca import Marca
 
 if __name__=="__main__":
         class TV:
