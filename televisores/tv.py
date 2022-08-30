@@ -40,7 +40,7 @@ class TV:
 
             NumTV=0
             def setNumTV(self):
-                NumTV= NumTV+1
+                NumTV= +1
             
             def getNumTV():
                 return TV.NumTV
