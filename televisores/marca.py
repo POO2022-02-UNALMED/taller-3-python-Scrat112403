@@ -6,5 +6,5 @@ class Marca:
     def setNombre (self):
         self.nombre=None
         
-    def getNombre():
+    def getNombre(self):
         return Marca.nombre

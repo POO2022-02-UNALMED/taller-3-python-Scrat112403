@@ -5,9 +5,9 @@ class Control:
                 self.tv= None
     
             def turnOn (self):
-                TV.turnOn()
+                self.tv.turnOn()
             def turnOff (self):
-                TV.turnOff()
+                self.tv.turnOff()
     
             def getEstado (self):
                 return TV.estado
