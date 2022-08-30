@@ -44,8 +44,8 @@ if __name__=="__main__":
         
 
             def enlazar (self, televisor):
-                self.tv=TV
-                self.control: Control
+                self.tv=televisor
+                TV.setControl(self)
     
             def settv (self, tv):
                 self.tv=tv
