@@ -19,8 +19,8 @@ class TV:
     def setVolumen (self, vol):
         self.volumen=vol
     def setCanal (self, can):
-        if self.tv.estado==True:
-            if 121>self.tv.canal>0:
+        if self.estado==True:
+            if 121>self.canal>0:
                 self.canal=can
 
     def getMarca (self):
