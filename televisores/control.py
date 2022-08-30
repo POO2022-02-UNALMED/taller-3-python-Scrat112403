@@ -39,10 +39,10 @@ class Control:
         self.tv=tv
         self.tv.setControl(self)
     
-    def setTV (self, tv):
+    def setTv (self, tv):
         self.tv=tv
 
-    def getTV ():
+    def getTv ():
         return Control.tv
 
 
