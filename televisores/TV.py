@@ -1,4 +1,5 @@
-import Marca
+from televisores.marca import Marca
+
 if __name__=="__main__":
         class TV:
             def __init__(self, marca, canal, precio, estado, volumen, control):

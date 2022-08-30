@@ -1,4 +1,4 @@
-import TV
+from televisores.tv import TV
 if __name__=="__main__":
         class Control:
         
