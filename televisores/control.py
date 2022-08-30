@@ -33,9 +33,7 @@ class Control:
 
     def setCanal (self,canal):
         if self.tv.estado==True:
-            if 120>self.tv.canal>=1:
-                self.tv.setCanal=canal
-            if 120>=self.tv.canal>1:
+            if 121>self.tv.canal>0:
                 self.tv.setCanal=canal
 
     def getCanal (self):
