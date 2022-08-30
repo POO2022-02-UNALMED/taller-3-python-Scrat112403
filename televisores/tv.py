@@ -39,8 +39,8 @@ class TV:
     def getCanal (self):
                 return self.canal
 
-    def setNumTV(self,num):
-                TV.NumTV= num
+    def setNumTV(self):
+                TV.NumTV= None
             
     def getNumTV():
                 return TV.NumTV
