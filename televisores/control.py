@@ -15,21 +15,21 @@ class Control:
             def canalUp(self):
                 if self.tv.estado==True:
                     if 120>self.tv.canal>=1:
-                        self.tv.canalUp+=1
+                        self.tv.canalUp()
             def canalDown(self):
                 if self.tv.estado==True:
                     if 120>=self.tv.canal>1:
-                        self.tv.canalDown-=1
+                        self.tv.canalDown()
             
             def volumenUp(self):
                 if self.tv.estado==True:
                     if 7>self.tv.volumen>=0:
-                        self.tv.volumenUp+=1
+                        self.tv.volumenUp()
     
             def volumenDown(self):
                 if self.tv.estado==True:
                     if 7>=self.tv.volumen>0:
-                        self.tv.volumenDown-=1
+                        self.tv.volumenDown()
 
             def setCanal (self, can):
                 self.tv.canal=can
