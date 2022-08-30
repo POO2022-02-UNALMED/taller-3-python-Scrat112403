@@ -39,7 +39,7 @@ class TV:
                 return self.canal
 
 
-    
+            NumTV=0
             def setNumTV(self):
                 NumTV= None 
             
