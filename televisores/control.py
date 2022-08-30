@@ -13,26 +13,26 @@ class Control:
                 return self.tv.estado
             
             def canalUp(self):
-                if self.estado==True:
-                    if 120>self.canal>=1:
-                        TV.canalUp+=1
+                if self.tv.estado==True:
+                    if 120>self.tv.canal>=1:
+                        self.tv.canalUp+=1
             def canalDown(self):
-                if self.estado==True:
-                    if 120>=self.canal>1:
-                        TV.canalDown-=1
+                if self.tv.estado==True:
+                    if 120>=self.tv.canal>1:
+                        self.tv.canalDown-=1
             
             def volumenUp(self):
-                if self.estado==True:
-                    if 7>self.volumen>=0:
-                        TV.volumenUp+=1
+                if self.tv.estado==True:
+                    if 7>self.tv.volumen>=0:
+                        self.tv.volumenUp+=1
     
             def volumenDown(self):
-                if self.estado==True:
-                    if 7>=self.volumen>0:
-                        TV.volumenDown-=1
+                if self.tv.estado==True:
+                    if 7>=self.tv.volumen>0:
+                        self.tv.volumenDown-=1
 
             def setCanal (self, can):
-                TV.canal=can
+                self.tv.canal=can
         
 
             def enlazar (self,tv):
