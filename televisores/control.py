@@ -45,5 +45,4 @@ class Control:
     def getTv (self):
         return self.tv
 
-
                 
