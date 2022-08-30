@@ -41,7 +41,7 @@ class TV:
 
     
             NumTV= 0
-            def TV.setNumTV(self, num):
+            def setNumTV(self):
                 NumTV= NumTV+1 
 
             def turnOn (self, On):
