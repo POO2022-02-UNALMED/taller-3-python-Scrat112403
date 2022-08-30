@@ -1,8 +1,8 @@
 from televisores.tv import TV
 class Control:
         
-            def __init__(self, tv):
-                self.tv= TV
+            def __init__(self):
+                self.tv= None
     
             def turnOn (self):
                 TV.turnOn()
@@ -12,31 +12,24 @@ class Control:
             def getEstado (self):
                 return TV.estado
             
-                if estado=="On":
-                    def canalUp(self,canal):
-                        if 120>canal>=1:
-                            TV.canalUp()
-                        else:
-                            self.canal= canal
+            def canalUp(self):
+                if self.estado==True:
+                    if 120>self.canal>=1:
+                        TV.canalUp+=1
+            def canalDown(self):
+                if self.estado==True:
+                    if 120>=self.canal>1:
+                        TV.canalDown-=1
             
-                    def canalDown(self,canal):
-                        if 120>=canal>1:
-                            TV.canalDown()
-                        else:
-                            self.canal= canal
-        
-                if estado=="On":
-                    def volumenUp(self,volumen):
-                        if 7>volumen>=0:
-                            TV.volumenUp()
-                        else:
-                            self.volumen=volumen
+            def volumenUp(self):
+                if self.estado==True:
+                    if 7>self.volumen>=0:
+                        TV.volumenUp+=1
     
-                    def volumenDown(self,volumen):
-                        if 7>=volumen>0:
-                            TV.volumenDown()
-                        else:
-                            self.volumen=volumen
+            def volumenDown(self):
+                if self.estado==True:
+                    if 7>=self.volumen>0:
+                        TV.volumenDown-=1
 
             def setCanal (self, can):
                 TV.canal=can
@@ -51,3 +44,6 @@ class Control:
 
             def gettv (self):
                 return self.tv
+
+
+                
