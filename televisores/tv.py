@@ -40,9 +40,9 @@ class TV:
 
 
     
-            numTV= 0
-            def nuevoTV():
-                numTV= numTV+1 
+            NumTV= 0
+            def TV.setNumTV(self, num):
+                NumTV= NumTV+1 
 
             def turnOn (self, On):
                 self.estado=On
