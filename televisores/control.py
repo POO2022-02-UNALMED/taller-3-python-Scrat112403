@@ -10,7 +10,7 @@ class Control:
                 self.tv.turnOff()
     
             def getEstado (self):
-                return TV.estado
+                return self.tv.estado
             
             def canalUp(self):
                 if self.estado==True:
